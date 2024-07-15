@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="copyright" content="baq tecnologies">
+<meta name="keywords" content="videojuegos,forza hrizon,asphalt 9,gameloft,asphalt 8,car parking,my city in 3d">
+<meta name="description" content="my city in 3d es un videogame que trata de explorar una ciudad con gráficos avanzados y sonidos impresionantes">
+<title>sobre nosotros</title>
+<link rel="icon" href="logo.ico">
+<style>
+    .barra { height: 33px; 
+        background: linear-gradient(to right, rgb(255, 0, 0), rgb(0, 255, 0), rgb(0, 0, 255));
+         animation: barraAnimation 2s linear infinite;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+           /* Definiendo la sombra */
+         }
+    
+    @keyframes barraAnimation {
+        0% {
+            background: linear-gradient(to right, rgb(255, 0, 0), rgb(0, 255, 0), rgb(0, 0, 255));
+        }
+        50% {
+            background: linear-gradient(to right, rgb(255, 255, 0), rgb(0, 255, 255), rgb(255, 0, 255));
+        }
+        100% {
+            background: linear-gradient(to right, rgb(255, 0, 0), rgb(0, 255, 0), rgb(0, 0, 255));
+        }
+    }
+    body{
+    background-image: url('https://images4.alphacoders.com/969/thumb-1920-969395.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: grey;
+   }
+   @media (max-width: 600px){
+       body{
+           background-size: contain;
+       }
+   }
+   @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.menu-icon {
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+.menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    text-align: center;
+    animation: slideOut 0.5s backwards;
+    margin-left: 30px;
+}
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.menu {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    text-align: center;
+animation: slideOut 0.5s backwards;
+}
+
+.menu.show {
+    display: block;
+}
+
+.menu-icon {
+    cursor: pointer;
+}
+
+.menu-item {
+    display: block;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #000;
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(10%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.titulo{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 0, 0);
+    margin: 5px;
+    padding-left: 30px;
+    animation: fadeIn 3s forwards; /* Agrega animación al h1 */
+}
+
+.parrafo1{
+    font-size: 19px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 0, 0);
+    font-weight: 700;
+    animation: fadeIn 3s forwards; /* Agrega animación a los párrafos */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+</style>
+</head>
+<body>
+    <div class="barra"></div>
+    <h1 class="titulo">Sobre nosotros</h1>
+    <p class="parrafo1">Bienvenidos a BAQ Technologies, la empresa líder en la producción de videojuegos de autos. Con un equipo de expertos en desarrollo de software y diseño gráfico, estamos comprometidos en ofrecer a nuestros clientes la mejor experiencia de juego en el mercado.
+
+        En BAQ Technologies, nos apasiona la industria del entretenimiento y estamos constantemente innovando para brindar a los jugadores de todo el mundo juegos de alta calidad y diversión sin límites. Nuestros videojuegos de autos cuentan con gráficos impresionantes, jugabilidad adictiva y una amplia variedad de pistas y vehículos para elegir.
+        
+        Ya sea que seas un amante de la velocidad o simplemente disfrutes de la emoción de competir en carreras épicas, en BAQ Technologies encontrarás el juego perfecto para ti. ¡Únete a nosotros y vive la adrenalina de la competición en cada curva!
+        
+        En BAQ Technologies, estamos impulsados por la pasión por los videojuegos y la satisfacción de nuestros clientes es nuestra principal prioridad. ¡Descubre la emoción de los videojuegos de autos con BAQ Technologies y vive la experiencia definitiva en entretenimiento virtual!</p>
+    
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <div class="menu">
+        <a href="descargar.html" class="menu-item">Descargar</a>
+        <a href="index.html" class="menu-item">volver</a>
+        <p>contacto baqtecnologies@gmail.com</p>
+    </div>
+</div>
+    <script>
+        function toggleMenu() {
+            let menu = document.querySelector('.menu');
+            menu.classList.toggle('show');
+        }
+    </script>
+
+</body>
+</html>
