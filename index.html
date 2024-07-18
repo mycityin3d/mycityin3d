@@ -15,8 +15,9 @@
         background-size: cover;
         margin: 0;
         padding: 0;
-    
+   
     }
+
     .imagenes img:nth-child(1) {
         filter: brightness(1.5) hue-rotate(90deg);
     }
@@ -32,13 +33,15 @@
     .imagenes img:nth-child(4) {
         filter: brightness(1.5) hue-rotate(0deg);
     }
-    
    
     .barra { 
         height: 33px; 
         background: linear-gradient(to right, rgb(255, 0, 0), rgb(0, 255, 0), rgb(0, 0, 255));
         animation: barraAnimation 2s linear infinite;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Definiendo la sombra */
+        position: fixed;
+        top: 0;
+        width: 100%;
      }
     
     @keyframes barraAnimation {
@@ -209,7 +212,7 @@
 
     <div class="cabezera">
         <center>
-            <h1 class="titulo1">My city in 3d</h1><br><br>
+           <br> <h1 class="titulo1">My city in 3d</h1><br><br>
             <audio id="Audio" src="1k-bendiciones-video-oficial.mp3" controls></audio>
         </center>
         <h1 class="titulo2">Parquearse es la meta!</h1>
@@ -242,9 +245,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
